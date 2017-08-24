@@ -14,6 +14,12 @@ class Counter extends Component {
     return this.state.counter !== nextState.counter;
   }
 
+  componentDidUpdate() {
+    if (this.state.counter === 3) {
+      this.props.hide();
+    }
+  }
+
   increment = () => {
     this.setState((prevState, props) => ({counter: prevState.counter + 1}));
   }
