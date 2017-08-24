@@ -1,10 +1,10 @@
 import React from 'react';
-import HideMe from "./HideMe/HideMe"
+import FormUncontrolled from "./FormUncontrolled/FormUncontrolled"
 
 export default function App(props) {
   return (
     <div>
-      <HideMe/>
+      <FormUncontrolled/>
     </div>
   )
 }
