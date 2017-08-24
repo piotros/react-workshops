@@ -7,21 +7,22 @@ class HideMe extends Component {
     super(props);
 
     this.state = {
-      visible: true
+      visible: true,
+      counter: 0
     }
   }
 
-  getContent({visible}) {
+  getContent({visible, counter}) {
     return (
       <div className="hide-me_content">
         {visible ? 'I\'m visible' : null}
-        <Counter hide={this.hide} textVisible={this.state.visible}/>
+        <Counter hide={this.hide} counter={counter}/>
       </div>
     )
   }
 
   hide = () => {
-    this.setState({visible: false});
+    this.setState({visible: false, counter: 1});
   }
 
   render() {

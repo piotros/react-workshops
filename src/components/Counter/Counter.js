@@ -6,7 +6,7 @@ class Counter extends Component {
     super(props);
 
     this.state = {
-      counter: 0
+      counter: props.counter
     }
   }
 
@@ -21,9 +21,7 @@ class Counter extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.textVisible === false) {
-      this.setState({counter: 1});
-    }
+    this.setState({counter: nextProps.counter});
   }
 
   increment = () => {
