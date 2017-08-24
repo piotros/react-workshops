@@ -7,11 +7,9 @@ class Counter extends Component {
     this.state = {
       counter: 0
     }
-
-    this.increment = this.increment.bind(this);
   }
 
-  increment() {
+  increment = () => {
     this.setState((prevState, props) => ({counter: prevState.counter + 1}));
   }
 
