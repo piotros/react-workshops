@@ -18,7 +18,7 @@ const Header = function ({children, ComponentToUse, componentToUse}) {
   }
 
   return (
-    <h1>
+    <h1 className="header">
       <img src={icon}/>
       {children}
     </h1>
