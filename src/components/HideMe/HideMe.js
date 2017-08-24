@@ -12,20 +12,12 @@ class HideMe extends Component {
   }
 
   getContent({visible}) {
-    if (visible) {
-      return (
-        <div className="hide-me_content">
-          I'm visible
-          <Counter key="counter"/>
-        </div>
-      )
-    } else {
-      return (
-        <div className="hide-me_content">
-          <Counter key="counter"/>
-        </div>
-      )
-    }
+    return (
+      <div className="hide-me_content">
+        {visible ? 'I\'m visible' : null}
+        <Counter/>
+      </div>
+    )
   }
 
   hide = () => {
