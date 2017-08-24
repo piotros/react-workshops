@@ -20,6 +20,12 @@ class Counter extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.textVisible === false) {
+      this.setState({counter: 1});
+    }
+  }
+
   increment = () => {
     this.setState((prevState, props) => ({counter: prevState.counter + 1}));
   }

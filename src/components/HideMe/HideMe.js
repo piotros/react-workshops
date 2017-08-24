@@ -15,7 +15,7 @@ class HideMe extends Component {
     return (
       <div className="hide-me_content">
         {visible ? 'I\'m visible' : null}
-        <Counter hide={this.hide}/>
+        <Counter hide={this.hide} textVisible={this.state.visible}/>
       </div>
     )
   }
