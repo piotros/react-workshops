@@ -1,5 +1,5 @@
 import React from 'react';
-import FormControlled from "./FormControlled"
+import ClassTest from './ClassTest'
 
 export default function App(props) {
   const values = {
@@ -14,7 +14,7 @@ export default function App(props) {
 
   return (
     <div>
-      <FormControlled values={values} onSubmit={onSubmit}/>
+      <ClassTest className="text" classes={['test1', 'test2']} color="red"/>
     </div>
   )
 }
