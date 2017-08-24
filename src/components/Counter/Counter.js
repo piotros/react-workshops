@@ -10,11 +10,16 @@ class Counter extends Component {
     }
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.counter !== nextState.counter;
+  }
+
   increment = () => {
     this.setState((prevState, props) => ({counter: prevState.counter + 1}));
   }
 
   render() {
+    console.log('render counter');
     return (
       <div className="counter">
         <Header children="I'm counter"/>

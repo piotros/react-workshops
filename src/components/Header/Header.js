@@ -5,8 +5,12 @@ import './Header.css';
 import icon from './react.png';
 
 class Header extends React.Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
-    console.log('render');
+    console.log('render header');
     const {children, ComponentToUse, componentToUse} = this.props;
 
     if (componentToUse) {
