@@ -1,5 +1,11 @@
 import React from 'react';
 
-export default function Header(props) {
+const Header = function (props) {
   return <h1>{props.children}</h1>;
-}
+};
+
+Header.defaultProps = {
+  children: '!'
+};
+
+export default Header;
