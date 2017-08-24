@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import RedHOC from '../RedHOC'
+import RedHoc from '../RedHOC'
 
 class FormControlled extends Component {
   constructor(props) {
@@ -61,4 +61,4 @@ class FormControlled extends Component {
   }
 }
 
-export default RedHOC(FormControlled);
+export default RedHoc(FormControlled);

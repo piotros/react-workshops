@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import './RedHOC.css'
 
-const RedHOC = WrappedComponent => {
+const RedHoc = WrappedComponent => {
   return class Red extends Component {
     render() {
       return (
@@ -15,4 +15,4 @@ const RedHOC = WrappedComponent => {
   }
 }
 
-export default RedHOC;
+export default RedHoc;
