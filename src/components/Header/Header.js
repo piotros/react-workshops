@@ -6,6 +6,7 @@ import icon from './react.png';
 
 class Header extends React.Component {
   render() {
+    console.log('render');
     const {children, ComponentToUse, componentToUse} = this.props;
 
     if (componentToUse) {
