@@ -19,7 +19,7 @@ const Header = function ({children, ComponentToUse, componentToUse}) {
 
   return (
     <h1 className="header">
-      <img src={icon}/>
+      <img src={icon} alt="React logo"/>
       {children}
     </h1>
   )
