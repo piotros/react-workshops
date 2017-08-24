@@ -1,10 +1,10 @@
 import React from 'react';
-import Counter from "./Counter/Counter"
+import HideMe from "./HideMe/HideMe"
 
 export default function App(props) {
   return (
     <div>
-      <Counter/>
+      <HideMe/>
     </div>
   )
 }
