@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import RedHOC from '../RedHOC'
 
 class FormControlled extends Component {
   constructor(props) {
@@ -25,9 +26,10 @@ class FormControlled extends Component {
 
   render() {
     const {input, checkbox, select} = this.state.values;
+    const {className} = this.props;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className={className}>
         <input type="text"
                value={input}
                onChange={event => this.handleChange(event, 'input')}
@@ -59,4 +61,4 @@ class FormControlled extends Component {
   }
 }
 
-export default FormControlled;
+export default RedHOC(FormControlled);
