@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from './Header';
 import Uppercase from './Uppercase';
+import Counter from "./Counter/Counter"
 
 export default function App(props) {
   return (
     <div>
+      <Counter/>
       <Header title="Dupa 1" {...props}/>
       <Header {...props} title="Dupa 2"/>
       <Header>Props children</Header>
