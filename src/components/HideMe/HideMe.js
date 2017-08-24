@@ -16,14 +16,13 @@ class HideMe extends Component {
       return (
         <div className="hide-me_content">
           I'm visible
-          <Counter/>
+          <Counter key="counter"/>
         </div>
       )
     } else {
       return (
         <div className="hide-me_content">
-          {null}
-          <Counter/>
+          <Counter key="counter"/>
         </div>
       )
     }
