@@ -5,6 +5,8 @@ class FormUncontrolled extends Component {
     event.preventDefault();
 
     console.log(this.input.value);
+    console.log(this.checkbox.checked);
+    console.log(this.select.options[this.select.selectedIndex].value);
   }
 
   render() {
@@ -12,7 +14,26 @@ class FormUncontrolled extends Component {
       <form onSubmit={this.handleSubmit}>
         <input type="text"
                defaultValue="test"
-               ref={input => this.input = input}/>
+               ref={input => this.input = input}
+        />
+
+        <br/>
+
+        <input type="checkbox"
+               defaultValue={false}
+               ref={checkbox => this.checkbox = checkbox}
+        />
+
+        <br/>
+
+        <select
+          defaultValue="one"
+          ref={select => this.select = select}
+        >
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+        </select>
 
         <br/>
 
