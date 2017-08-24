@@ -22,6 +22,7 @@ class HideMe extends Component {
     } else {
       return (
         <div className="hide-me_content">
+          {null}
           <Counter/>
         </div>
       )
