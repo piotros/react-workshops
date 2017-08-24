@@ -12,11 +12,7 @@ class FormControlled extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const {input, checkbox, select} = this.state.values;
-
-    const values = {input, checkbox, select};
-
-    this.props.onSubmit(values);
+    this.props.onSubmit(this.state.values);
   }
 
   handleChange(event, type) {
