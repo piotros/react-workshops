@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Header.css';
+import icon from './react.png';
+
 const Header = function ({children, ComponentToUse, componentToUse}) {
   if (componentToUse) {
     return (
@@ -14,7 +17,12 @@ const Header = function ({children, ComponentToUse, componentToUse}) {
     )
   }
 
-  return <h1>{children}</h1>;
+  return (
+    <h1>
+      <img src={icon}/>
+      {children}
+    </h1>
+  )
 };
 
 Header.defaultProps = {
