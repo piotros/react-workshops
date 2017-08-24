@@ -13,6 +13,7 @@ export default function App(props) {
       <Header componentToUse={Uppercase} children="uppercase me 3"/>
       <Header ComponentToUse={Uppercase}>uppercase me 4</Header>
       <Header ComponentToUse={Uppercase} children="uppercase me 5"/>
+      <Header children={3}/>
     </div>
   )
 }
