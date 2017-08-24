@@ -1,5 +1,5 @@
 import React from 'react';
-import FormUncontrolled from "./FormUncontrolled"
+import FormControlled from "./FormControlled"
 
 export default function App(props) {
   const values = {
@@ -14,7 +14,7 @@ export default function App(props) {
 
   return (
     <div>
-      <FormUncontrolled values={values} onSubmit={onSubmit}/>
+      <FormControlled values={values} onSubmit={onSubmit}/>
     </div>
   )
 }
